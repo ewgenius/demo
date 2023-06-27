@@ -7,9 +7,9 @@ triggers:
     column: block_number
     path: eth
 output:
-- type: dataset
-   name: uniswap_v2_eth_usdc
-- type: webhook
-   name: uniswap_v2_eth_usdc_webhook
-   url: http:?....
-   include_data: true
+  - type: dataset
+     name: uniswap_v2_eth_usdc
+  - type: webhook
+     name: uniswap_v2_eth_usdc_webhook
+     url: http:?....
+     include_data: true
