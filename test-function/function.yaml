@@ -1,5 +1,5 @@
 ---
-output_dataset: uniswap_eth
+# output_dataset: uniswap_eth
 triggers:
   - path: eth
   - path: btc
