@@ -1,9 +1,15 @@
 ---
-name: my_function
-enabled: false
-entry_point: main()
+output_dataset: uniswap_eth
 triggers:
-  - type: dataset
-    column: block_number
-    path: eth
+  - path: eth
+
+# ---
+# name: my_function
+# enabled: false
+# entry_point: main()
+# triggers:
+#   - type: dataset
+#     column: block_number
+#     path: eth
+
 
