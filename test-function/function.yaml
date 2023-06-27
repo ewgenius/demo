@@ -1,8 +1,8 @@
 ---
-# output_dataset: uniswap_eth
-triggers:
-  - path: eth
-  - path: btc
+output_dataset: uniswap_eth
+# triggers:
+#   - path: eth
+#   - path: btc
 
 # ---
 # name: my_function
