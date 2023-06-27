@@ -6,9 +6,6 @@ triggers:
   - type: dataset
     column: block_number
     path: eth
-  - type: cron
-    schedule: * * * * * 7 / 0
-    path: eth.blocks
 output:
 - type: dataset
    name: uniswap_v2_eth_usdc
