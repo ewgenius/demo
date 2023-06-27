@@ -7,7 +7,7 @@ triggers:
     column: block_number
     path: eth
   - type: cron
-    schedule: * * * * * 7 / 0
+    schedule: "* * * * * 7 / 0"
     path: eth.blocks
 output:
 - type: dataset
