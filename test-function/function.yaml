@@ -1,16 +1,6 @@
 ---
 output_dataset: uniswap_eth
-# triggers:
-#   - path: eth
-#   - path: btc
-
-# ---
-# name: my_function
-# enabled: false
-# entry_point: main()
-# triggers:
-#   - type: dataset
-#     column: block_number
-#     path: eth
-
-
+entry_point: __main__.py
+enabled: true
+triggers:
+  - path: eth
