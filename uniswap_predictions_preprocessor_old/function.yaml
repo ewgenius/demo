@@ -1,5 +1,0 @@
----
-output_dataset: uniswap_eth
-entry_point: __main__.py
-triggers:
-  - path: eth

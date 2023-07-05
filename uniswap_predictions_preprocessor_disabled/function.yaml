@@ -1,5 +1,0 @@
----
-output_dataset: uniswap_eth
-enabled: false
-triggers:
-  - path: eth
