@@ -12,9 +12,11 @@ import os
 # - QUERY_VARIABLES: a dictionary of available variables for running our queries
 # - OUTPUT_DIR: where to write our results that can either be written as a .sql or .parquet file
 
-template_filename = 'uniswap_event_swaps.sql.tpl' if QUERY_VARIABLES.get('block_number') else 'uniswap_event_swaps_latest.sql.tpl'
+template_filename = 'uniswap_event_swaps.sql.tpl' if QUERY_VARIABLES.get(
+    'block_number') else 'uniswap_event_swaps_latest.sql.tpl'
 template_filename = os.path.join(os.path.dirname(__file__), template_filename)
-query_template = Template(__loader__.get_data(template_filename).decode("utf8"))
+query_template = Template(__loader__.get_data(
+    template_filename).decode("utf8"))
 query = query_template.substitute(QUERY_VARIABLES)
 try:
     reader = SPICE_CLIENT.query(query)
@@ -30,7 +32,8 @@ if len(df) == 0:
 df["y"] = df["y"].astype(np.float32)
 df = df.groupby(by=["ts"]).mean().reset_index()
 df.sort_values("ts", inplace=True)
-pad_df = pd.DataFrame(data={"ts": np.arange(df["ts"].min(), df["ts"].max() + 1)})
+pad_df = pd.DataFrame(
+    data={"ts": np.arange(df["ts"].min(), df["ts"].max() + 1)})
 df = df.merge(pad_df, how="right", on="ts")
 df.sort_values("ts", inplace=True, ignore_index=True)
 df = df.interpolate(method="pad")
