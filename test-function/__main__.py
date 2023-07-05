@@ -7,7 +7,7 @@
 
 try:
     reader = SPICE_CLIENT.query(
-        "select number, hash, gas_used from eth.recent_blocks limit 10")
+        "select number, hash from eth.recent_blocks limit 10")
     df = reader.read_pandas()
 
 except Exception as e:
