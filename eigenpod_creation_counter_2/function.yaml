@@ -2,4 +2,4 @@ output_dataset: eigenpod_creation_counter
 triggers:
   - path: eth
 runtime: python3.11
-handler: spice_function.process
+handler: spice_function.process_2
