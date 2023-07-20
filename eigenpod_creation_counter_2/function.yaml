@@ -1,4 +1,4 @@
-output_dataset: eigenpod_creation_counter
+output_dataset: eigenpod_creation_counter_2
 triggers:
   - path: eth
 runtime: python3.11
