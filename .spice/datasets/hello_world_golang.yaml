@@ -1,0 +1,10 @@
+# .spice/datasets/hello_world_golang.yml
+name: hello_world_golang
+type: append
+migrations:
+  - name: create_table
+    sql: |
+      CREATE TABLE IF NOT EXISTS hello_world_golang (
+        block_number BIGINT PRIMARY KEY,
+        greeting TEXT
+      )
