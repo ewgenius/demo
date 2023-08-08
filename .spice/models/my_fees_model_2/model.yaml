@@ -1,0 +1,8 @@
+family: gas_fees
+name: my_fees_model_2
+lookback_size: 50
+forecast_size: 50
+handler: spice-model-entry.py
+training_entry_point: training_func
+inference_entry_point: inference_func
+normalization_entry_point: normalization_func
