@@ -6,3 +6,8 @@ handler: spice-model-entry.py
 training_entry_point: training_func
 inference_entry_point: inference_func
 normalization_entry_point: normalization_func
+metadata:
+  firecache: true
+  aggregate: false
+  covariate: false
+  ratio: false
