@@ -1,5 +1,6 @@
 family: gas_fees
 name: v0.0
+model_type: tf_model_aggregated
 handler: gas_fees.py
 training_entry_point: gas_fees.train
 inference_entry_point: gas_fees.infer
