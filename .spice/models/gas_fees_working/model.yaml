@@ -1,5 +1,6 @@
 family: gas_fees
 name: v0.0
+model_type: gasfees_v1
 handler: gas_fees.py
 train_entrypoint: gas_fees.train
 inference_entrypoint: gas_fees.infer
