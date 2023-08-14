@@ -1,0 +1,20 @@
+name: '@ewgenius.custom_views'
+type: append
+migrations:
+  - name: create_view
+    acceleration:
+      type: raw
+      columns:
+        - name: block_number
+    sql: |
+      CREATE VIEW "@ewgenius".recent_transactions_view AS
+        SELECT * FROM eth.recent_transactions;
+
+  - name: create_view
+    acceleration:
+      type: raw
+      columns:
+        - name: block_number
+    sql: |
+      CREATE VIEW ewgenius.recent_transactions_view AS
+        SELECT * FROM eth.recent_transactions;
