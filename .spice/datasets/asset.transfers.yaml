@@ -1,0 +1,12 @@
+name: lukekim.testing.asset_transfers
+type: append
+access:
+  read:
+    - '*'
+migrations:
+  - name: create_asset_transfers
+    sql: |
+      CREATE VIEW lukekim.testing.asset_transfers AS (
+        SELECT *
+        FROM "@lukekim".testing.asset_transfers
+      )
