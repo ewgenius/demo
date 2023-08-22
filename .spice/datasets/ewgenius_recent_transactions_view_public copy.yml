@@ -1,4 +1,4 @@
-name: 'ewgenius.recent_transactions_view'
+name: 'ewgenius.recent_transactions_view_copy'
 type: append
 migrations:
   - name: create_view
