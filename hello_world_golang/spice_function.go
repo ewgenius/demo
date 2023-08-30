@@ -13,7 +13,7 @@ func HelloWorldGo(ctx *function.FunctionCtx, duckDb *sql.DB, client *gospice.Spi
 
 	// Temporary step
 	_, err := duckDb.ExecContext(ctx, `
-	create table output.hello_world_golang (
+	create table output.ewgenius.demo.hello_world_golang (
 		block_number bigint,
 		greeting TEXT
 	);`)
@@ -21,7 +21,7 @@ func HelloWorldGo(ctx *function.FunctionCtx, duckDb *sql.DB, client *gospice.Spi
 		return err
 	}
 
-	_, err = duckDb.ExecContext(ctx, "INSERT INTO output.hello_world_golang (block_number, greeting) VALUES ($1, $2);", ctx.BlockNumber(), "Hello from Spice Go runtime!")
+	_, err = duckDb.ExecContext(ctx, "INSERT INTO output.ewgenius.demo.hello_world_golang (block_number, greeting) VALUES ($1, $2);", ctx.BlockNumber(), "Hello from Spice Go runtime!")
 	if err != nil {
 		return err
 	}
