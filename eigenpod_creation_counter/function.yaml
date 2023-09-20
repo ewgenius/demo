@@ -2,6 +2,7 @@ name: eigenpod_creation_counter
 description: my custom function
 output_datasets:
   - eigenpod_creation_counter
+  - eigenpod_creation_counter_1
 triggers:
   - path: eth
 runtime: python3.11
