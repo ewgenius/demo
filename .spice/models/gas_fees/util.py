@@ -54,4 +54,3 @@ def make_inference_response(predicted: np.ndarray, now: float) -> InferenceRespo
     return InferenceResponse(
         forecast=forecast,
     )
-

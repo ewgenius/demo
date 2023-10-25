@@ -444,4 +444,3 @@ def generate_backtest_report(model, df: np.array, lookahead_size: int) -> Report
     ])
 
     return Report(items=report_items)
-

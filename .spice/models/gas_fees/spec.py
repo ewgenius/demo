@@ -69,4 +69,3 @@ ReportItem = HtmlReportItem | PlotlyReportItem
 @dataclass
 class Report:
     items: list[ReportItem]
-

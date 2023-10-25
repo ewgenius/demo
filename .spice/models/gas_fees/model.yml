@@ -1,4 +1,4 @@
-family: gas_fees_1
+family: gas_fees
 name: v0.0
 model_type: gasfees_v1
 handler: gas_fees.py

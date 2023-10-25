@@ -82,4 +82,3 @@ WHERE base_fee_per_gas IS NOT NULL ORDER BY ts DESC LIMIT 35'''
 
 if __name__ == '__main__':
   train()
-
