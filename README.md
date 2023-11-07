@@ -14,3 +14,17 @@ Connect with us on [Discord](https://discord.gg/PUCapX22En) - your feedback is a
 ## Deploy on Spice.xyz
 
 Merges to `main` will automatically be deployed.
+
+```js
+ccode
+
+code
+```
+
+
+some other code
+
+```
+test
+test
+```
