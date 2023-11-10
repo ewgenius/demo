@@ -12,5 +12,5 @@ migrations:
       columns:
         - name: block_number
     sql: |
-      CREATE VIEW ewgenius.demo.recent_transactions_view AS
+      CREATE OR REPLACE VIEW ewgenius.demo.recent_transactions_view_1 AS
         SELECT * FROM eth.recent_transactions;
