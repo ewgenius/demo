@@ -1,4 +1,4 @@
-# test
+# test 2
 name: eth.recent_transactions
 type: append
 firecache:
