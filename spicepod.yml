@@ -1,1 +1,6 @@
 name: "@ewgenius/demo"
+
+# other public spicepods linked as dependencies
+dependencies:
+  - "@lukekim/demo"
+  - "@phillipleblanc/demo"
