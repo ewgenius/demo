@@ -15,9 +15,6 @@ metadata:
 datasets:
   - name: uniswap_v2_eth_usdc
     type: append
-    firecache:
-      enabled: true
-
   - from: datasets/uniswap_v2_eth_usdc
 
 functions:
