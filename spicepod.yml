@@ -16,6 +16,7 @@ datasets:
   - name: uniswap_v2_eth_usdc
     type: append
   - from: datasets/uniswap_v2_eth_usdc
+  - from: datasets/dataset_1
 
 functions:
   - name: uniswap_predictions_processor
