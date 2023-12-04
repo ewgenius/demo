@@ -1,4 +1,4 @@
-# ___ yaml-language-server: $schema=./spicepod.schema.json
+# __ yaml-language-server: $schema=./spicepod.schema.json
 
 name: "@ewgenius/demo"
 description: my spicepod
