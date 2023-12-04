@@ -20,5 +20,5 @@ functions:
       - datasets/dataset_2
 
 dependencies:
-  - lukekim/demo:0.1
-  - spicehq/nfts
+  - org1/app1:v0.0.1
+  - org2/app2:v0.0.2
