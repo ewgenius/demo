@@ -17,6 +17,7 @@ datasets:
     type: append
   - from: datasets/uniswap_v2_eth_usdc
   - from: datasets/dataset_1
+  - from: datasets/dataset_2
 
 functions:
   - name: uniswap_predictions_processor
@@ -27,7 +28,10 @@ functions:
     runtime: python3.11
     handler: spice_function.process
 
-  - from: functions/uniswap_predictions_processor_v2
+  - from: functions/function_1
+    dependsOn:
+      - datasets/dataset_1
+      - datasets/dataset_2
 
 models:
   - name: gas_fees
