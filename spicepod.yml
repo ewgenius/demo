@@ -7,8 +7,8 @@ kind: Spicepod
 #   epoch_time: 1605312000
 #   period: 72h
 
-# datasets:
-#   - from: datasets/dataset_1
+datasets:
+  - from: datasets/dataset_1
 #   - from: datasets/dataset_2
 #   - name: dataset_3
 #     type: append
