@@ -13,11 +13,11 @@ datasets:
 #   - name: dataset_3
 #     type: append
 
-# functions:
-#   - from: functions/function_1
-#     dependsOn:
-#       - datasets/dataset_1
-#       - datasets/dataset_2
+functions:
+  - from: functions/function_1
+    dependsOn:
+      - datasets/dataset_1
+      - datasets/dataset_2
 
 dependencies:
   - org1/app1:v0.0.1
