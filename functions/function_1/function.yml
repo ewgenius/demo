@@ -1,1 +1,4 @@
 name: function_1
+output_dataset: dataset_1
+triggers:
+  - path: eth
