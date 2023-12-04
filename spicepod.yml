@@ -8,7 +8,7 @@ kind: Spicepod
 #   period: 72h
 
 datasets:
-  # - from: datasets/dataset_1
+  - from: datasets/dataset_1
   # - from: datasets/dataset_2
   - name: dataset_3
     type: append
