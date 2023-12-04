@@ -22,3 +22,4 @@ kind: Spicepod
 dependencies:
   - org1/app1:v0.0.1
   - org2/app2:v0.0.2
+  - org3/app3:v0.0.3
