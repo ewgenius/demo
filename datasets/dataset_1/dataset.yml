@@ -1,0 +1,7 @@
+name: dataset_1
+type: append
+
+firecache:
+  enabled: true
+  trigger: test
+  time_column: timestamp

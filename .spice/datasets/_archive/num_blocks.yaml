@@ -1,9 +1,0 @@
-name: num_blocks
-type: append
-migrations:
-  - name: create_table
-    sql: |
-      CREATE TABLE IF NOT EXISTS num_blocks (
-        block_number BIGINT PRIMARY KEY,
-        blocks BIGINT
-      )
