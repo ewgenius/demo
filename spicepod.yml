@@ -20,6 +20,4 @@ functions:
       # - datasets/dataset_2
 
 dependencies:
-  - org1/app1:v0.0.1
-  - org2/app2:v0.0.1
-#   - org3/app3:v0.0.1
+  - my-spice-org-1/my-spicepod: v0.1
