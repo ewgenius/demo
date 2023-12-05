@@ -19,6 +19,6 @@ functions:
       - datasets/dataset_1
       - datasets/dataset_2
 
-# dependencies:
-#   - my-spice-org-1/my-spicepod:v0.1
-#   - ewgenius/demo:v0.1.0
+dependencies:
+  - my-spice-org-1/my-spicepod:v0.1
+  - ewgenius/demo:v0.1.0
