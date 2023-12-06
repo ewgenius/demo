@@ -22,4 +22,4 @@ functions:
 dependencies:
 #   - my-spice-org-1/my-spicepod:v0.1
    # - spiceai/datasets
-   # - lukekim/demo
+   - lukekim/demo
