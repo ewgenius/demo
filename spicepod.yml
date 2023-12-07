@@ -52,4 +52,4 @@ models:
 
 dependencies:
   - lukekim/demo
-  - spicehq/datasets
+  - spiceai/datasets
