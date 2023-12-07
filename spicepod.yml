@@ -51,5 +51,5 @@ models:
   - from: models/gas_fees_v2
 
 dependencies:
-  - lukekim/demo:0.1
-  - spicehq/nfts
+  - lukekim/demo
+  - spicehq/datasets
