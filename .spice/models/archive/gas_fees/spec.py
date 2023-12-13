@@ -9,9 +9,6 @@ class TrainParams:
     forecast_size: int
     epochs: int
     metadata: Optional[dict]
-    runtime: str
-    compiled_package_cid: str
-    train_handler: str
 
 @dataclass
 class TrainResponse:
@@ -27,17 +24,13 @@ class InferencePoint:
 
 @dataclass
 class InferenceParams:
+    model_id: str
     lookback: list[InferencePoint]
     model_weights_cid: str
     model_weights_name: str
     lookback_size: int
     forecast_size: int
-    runtime: str
-    compiled_package_cid: str
-    inference_handler: str
     metadata: Optional[dict] = None
-    job_id: str = ""
-    model_type: str = ""
 
 @dataclass
 class InferenceResponse:
