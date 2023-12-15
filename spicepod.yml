@@ -50,6 +50,6 @@ models:
 
   - from: models/gas_fees_v2
 
-# dependencies:
-#   - lukekim/demo
+dependencies:
+  - lukekim/demo
 #   - spiceai/datasets
