@@ -5,12 +5,12 @@ description: my spicepod
 version: v1beta1
 kind: Spicepod
 
-metadata:
-  epoch_time: 1605312000
-  period: 72h
-  interval: 1m
-  granularity: 10s
-  episodes: 10
+# metadata:
+#   epoch_time: 1605312000
+#   period: 72h
+#   interval: 1m
+#   granularity: 10s
+#   episodes: 10
 
 # datasets:
 #   - name: uniswap_v2_eth_usdc
