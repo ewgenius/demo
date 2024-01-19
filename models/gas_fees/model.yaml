@@ -1,9 +1,7 @@
 family: gas_fees
 name: v0.1
 type: xgb_gasfees
-description: test model
 
-# new spec:
 epochs: 10
 
 training:
