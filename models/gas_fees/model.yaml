@@ -10,7 +10,7 @@ training:
       SELECT block_number, count(1) as "count" FROM eth.transactions GROUP BY block_number
     )
     SELECT
-      timestamp as "ts",
+      "timestamp" as "ts",
       CAST(b.base_fee_per_gas / 1000000000.0 AS DOUBLE) as "y",
       CAST(c."count" AS DOUBLE) as "covariate"
     FROM eth.blocks b  INNER JOIN counts c ON b.number = c.block_number
@@ -21,7 +21,7 @@ training:
 inferencing:
   sql: |
     SELECT
-      timestamp as "ts",
+      "timestamp" as "ts",
       CAST(base_fee_per_gas / 1000000000.0 AS DOUBLE) as "y",
       CAST(transaction_count AS DOUBLE) as "y2"
     FROM eth.recent_blocks
