@@ -27,10 +27,10 @@ inferencing:
     FROM eth.recent_blocks
     WHERE base_fee_per_gas IS NOT NULL
     ORDER BY ts DESC
-    LIMIT 35
+    LIMIT 100
 
-  lookback_size: 30
-  forecast_size: 1
+  lookback_size: 50
+  forecast_size: 5
 
 metadata:
   firecache: false
