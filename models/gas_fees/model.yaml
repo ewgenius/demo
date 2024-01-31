@@ -30,7 +30,7 @@ inferencing:
     LIMIT 35
 
   lookback_size: 30
-  forecast_size: 1
+  forecast_size: 5
 
 metadata:
   firecache: false
