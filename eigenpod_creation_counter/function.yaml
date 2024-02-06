@@ -1,4 +1,5 @@
 name: eigenpod_creation_counter
+enabled: false
 description: my custom function
 output_datasets:
   - eigenpod_creation_counter
