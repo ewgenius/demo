@@ -1,5 +1,6 @@
 family: exchange_rate
 name: Exchange rate pair
+description: Darts model example
 type: darts_exchange_pair
 
 epochs: 2
