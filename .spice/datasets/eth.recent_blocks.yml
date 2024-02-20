@@ -1,4 +1,6 @@
 name: eth.recent_blocks
+description: test spice dataset
+
 type: append
 # firecache:
 #   enabled: false
