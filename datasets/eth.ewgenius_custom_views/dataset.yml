@@ -1,4 +1,4 @@
-name: '@ewgenius.custom_views'
+name: '@ewgenius.custom_views_updated'
 type: append
 migrations:
   - name: create_view
