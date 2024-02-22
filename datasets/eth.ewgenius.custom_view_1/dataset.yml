@@ -1,4 +1,4 @@
-name: 'eth.ewgenius.custom_view_1'
+name: 'eth.ewgenius.custom_view_1_name updated'
 type: append
 migrations:
   - name: create_view
