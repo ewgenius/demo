@@ -1,4 +1,4 @@
-name: '@ewgenius.custom_views_updated'
+name: '@ewgenius.my_dataset_renamed'
 type: append
 migrations:
   - name: create_view
