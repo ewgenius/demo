@@ -1,4 +1,4 @@
-name: 'eth.ewgenius.custom_view_2'
+name: 'eth.ewgenius.recent_blocks'
 type: append
 migrations:
   - name: create_view
@@ -12,5 +12,5 @@ migrations:
       columns:
         - name: block_number
     sql: |
-      CREATE OR REPLACE VIEW ewgenius.demo.custom_view_2 AS
-        SELECT * FROM eth.recent_transactions;
+      CREATE OR REPLACE VIEW ewgenius.demo.eth_recent_blocks AS
+        SELECT * FROM eth.recent_blocks;
