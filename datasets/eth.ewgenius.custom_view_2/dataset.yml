@@ -13,4 +13,4 @@ migrations:
         - name: block_number
     sql: |
       CREATE OR REPLACE VIEW ewgenius.demo.eth_recent_blocks AS
-        SELECT * FROM eth.recent_blocks;
+        SELECT * FROM eth.blocks;
