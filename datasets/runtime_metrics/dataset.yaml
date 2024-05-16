@@ -8,4 +8,6 @@ migrations:
         metrics TEXT,
         value FLOAT,
         labels TEXT
-      )
+      );
+      ALTER TABLE ewgenius.demo.runtime_metrics
+      RENAME COLUMN metrics TO name;
