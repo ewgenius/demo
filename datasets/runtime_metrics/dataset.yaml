@@ -1,13 +1,13 @@
-name: ewgenius.demo.runtime_metrics
+name: ewgenius.demo.runtime_metrics_test_1
 type: append
 migrations:
   - name: create_table
     sql: |
-      CREATE TABLE IF NOT EXISTS ewgenius.demo.runtime_metrics (
+      CREATE TABLE IF NOT EXISTS ewgenius.demo.runtime_metrics_test_1 (
         timestamp BIGINT,
         metrics TEXT,
         value FLOAT,
         labels TEXT
       );
-      ALTER TABLE ewgenius.demo.runtime_metrics
+      ALTER TABLE ewgenius.demo.runtime_metrics_test_1
       RENAME COLUMN metrics TO name;
