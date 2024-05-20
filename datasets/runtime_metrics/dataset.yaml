@@ -5,9 +5,7 @@ migrations:
     sql: |
       CREATE TABLE IF NOT EXISTS ewgenius.demo.runtime_metrics (
         timestamp BIGINT,
-        metrics TEXT,
+        name TEXT,
         value FLOAT,
         labels TEXT
       );
-      ALTER TABLE ewgenius.demo.runtime_metrics
-      RENAME COLUMN metrics TO name;
