@@ -1,9 +1,9 @@
-name: ewgenius.demo.runtime_metrics_test
+name: ewgenius.demo.runtime_metrics_test_2
 type: append
 migrations:
   - name: create_table
     sql: |
-      CREATE TABLE IF NOT EXISTS ewgenius.demo.runtime_metrics_test (
+      CREATE TABLE IF NOT EXISTS ewgenius.demo.runtime_metrics_test_2 (
         timestamp TIMESTAMP,
         name TEXT,
         value FLOAT,
