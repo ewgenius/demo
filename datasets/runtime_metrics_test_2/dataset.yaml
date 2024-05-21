@@ -1,0 +1,12 @@
+name: ewgenius.demo.runtime_metrics_test
+type: append
+migrations:
+  - name: create_table
+    sql: |
+      CREATE TABLE IF NOT EXISTS ewgenius.demo.runtime_metrics_test (
+        timestamp TIMESTAMP,
+        name TEXT,
+        value FLOAT,
+        tags HSTORE,
+        labels TEXT
+      );
