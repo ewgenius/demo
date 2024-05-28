@@ -4,7 +4,7 @@ migrations:
   - name: create_table
     sql: |
       CREATE TABLE IF NOT EXISTS ewgenius.demo.runtime_metrics_test_1 (
-        timestamp BIGINT,
+        timestamp TIMESTAMP,
         name TEXT,
         value FLOAT,
         labels TEXT
