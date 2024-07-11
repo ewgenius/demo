@@ -1,0 +1,11 @@
+version: v1beta1
+kind: Spicepod
+name: spiced-app-1
+
+datasets:
+  - from: s3://spiceai-demo-datasets/taxi_trips/2024/
+    name: my_taxi_trips_from_repo
+    params:
+      file_format: parquet
+    acceleration:
+      enabled: true
