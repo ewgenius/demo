@@ -9,3 +9,11 @@ datasets:
       file_format: parquet
     acceleration:
       enabled: true
+
+
+models:
+  - name: openai-with-spice
+    from: openai:gpt-4o
+    params:
+      spice_tools: auto
+      openai_api_key: ${ secrets:SPICE_OPENAI_API_KEY }
