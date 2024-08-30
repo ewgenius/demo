@@ -16,4 +16,4 @@ models:
     from: openai:gpt-4o
     params:
       spice_tools: auto
-      openai_api_key: ${ secrets:SPICE_OPENAI_API_KEY }
+      openai_api_key: ${ secrets:OPENAI__OPENAI_API_KEY }
