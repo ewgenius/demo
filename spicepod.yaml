@@ -12,6 +12,11 @@ datasets:
 
 
 models:
+  - name: openai-with-spice-2
+    from: openai:gpt-4o
+    params:
+      spice_tools: auto
+      openai_api_key: ${ secrets:XYZ }
   - name: openai-with-spice
     from: openai:gpt-4o
     params:
