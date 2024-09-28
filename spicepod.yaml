@@ -11,10 +11,10 @@ datasets:
       enabled: true
 
 models:
-  - name: openai
-    from: openai:gpt-4o
-    params:
-      openai_api_key: ${ secrets:OPENAI_API_KEY }
+  # - name: openai
+  #   from: openai:gpt-4o
+  #   params:
+  #     openai_api_key: ${ secrets:OPENAI_API_KEY }
       
   - name: openai-with-spice
     from: openai:gpt-4o
