@@ -10,6 +10,18 @@ datasets:
     acceleration:
       enabled: true
 
+  - from: github:github.com/apache/datafusion/files/main
+    name: datafusion.docs
+    description: Datafusion docs at https://datafusion.apache.org
+    params:
+      github_token: ${secrets:GITHUB__GITHUB_TOKEN}
+      include: "docs/source/**/*.md"
+    acceleration:
+      enabled: true
+      refresh_check_interval: 12h
+      refresh_jitter_enabled: true
+      refresh_jitter_max: 5m
+
 models:
   # - name: openai
   #   from: openai:gpt-4o
