@@ -4,18 +4,21 @@ name: spiced-app-1
 
 datasets:
   - from: s3://spiceai-demo-datasets/taxi_trips/2024/
-    name: my_taxi_trips_from_repo
+    name: taxi_trips
     params:
       file_format: parquet
     acceleration:
       enabled: true
 
+  - from: github:github.com/spiceai/docs/files/trunk
+    name: spiceai_docs
+    params:
+      github_token: ${secrets:GITHUB_TOKEN}
+      include: 'spiceaidocs/docs/**/*.md'
+    acceleration:
+      enabled: true
+
 models:
-  # - name: openai
-  #   from: openai:gpt-4o
-  #   params:
-  #     openai_api_key: ${ secrets:OPENAI_API_KEY }
-      
   - name: openai-with-spice
     from: openai:gpt-4o
     params:
