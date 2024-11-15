@@ -13,14 +13,6 @@ datasets:
   - from: github:github.com/spiceai/docs/files/trunk
     name: spiceai_docs
     params:
-      github_token: ${secrets:GITHUB_TOKEN}
       include: 'spiceaidocs/docs/**/*.md'
     acceleration:
       enabled: true
-
-models:
-  - name: openai-with-spice
-    from: openai:gpt-4o
-    params:
-      spice_tools: auto
-      openai_api_key: ${ secrets:OPENAI_API_KEY }
