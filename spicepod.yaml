@@ -2,17 +2,4 @@ version: v1beta1
 kind: Spicepod
 name: spiced-app-1
 
-datasets:
-  - from: s3://spiceai-demo-datasets/taxi_trips/2024/
-    name: taxi_trips
-    params:
-      file_format: parquet
-    acceleration:
-      enabled: true
-
-  - from: github:github.com/spiceai/docs/files/trunk
-    name: spiceai_docs
-    params:
-      include: 'spiceaidocs/docs/**/*.md'
-    acceleration:
-      enabled: true
+test

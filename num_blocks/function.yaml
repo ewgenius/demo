@@ -1,5 +1,0 @@
-output_dataset: num_blocks
-triggers:
-  - path: eth
-runtime: python3.11
-handler: spice_function.process
